@@ -1,85 +1,52 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.7.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
 
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
 
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="1.Spring1.Spring1.1简介1.2优点 控制反转IOC 面向切面AOP  1.3组成 1.4拓展 Spring Boot 一个快速开发的脚手架 约定大于配置  Spring Cloud 基于Springboot实现的   2.IOC 使用set注入后，主动权交给用户。 2.1 图   所谓的IOC：对象由Spring来创建，管理，装配。 3.Spring配置1.别名12&amp;lt;!--">
+  <meta name="description" content="1.Spring1.Spring1.1简介1.2优点 控制反转IOC 面向切面AOP  1.3组成 1.4拓展 Spring Boot 一个快速开发的脚手架 约定大于配置  Spring Cloud 基于Springboot实现的   2.IOC 使用set注入后，主动权交给用户。 2.1 图   所谓的IOC：对象由Spring来创建，管理，装配。 3.Spring配置1.别名12&amp;lt;!--">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Spring">
 <meta property="og:url" content="http://yoursite.com/2020/01/06/Spring/index.html">
@@ -96,39 +63,17 @@
 <meta name="twitter:description" content="1.Spring1.Spring1.1简介1.2优点 控制反转IOC 面向切面AOP  1.3组成 1.4拓展 Spring Boot 一个快速开发的脚手架 约定大于配置  Spring Cloud 基于Springboot实现的   2.IOC 使用set注入后，主动权交给用户。 2.1 图   所谓的IOC：对象由Spring来创建，管理，装配。 3.Spring配置1.别名12&amp;lt;!--">
 <meta name="twitter:image" content="https://img2018.cnblogs.com/blog/1704520/201906/1704520-20190624204106525-880966760.gif">
 
+<link rel="canonical" href="http://yoursite.com/2020/01/06/Spring/">
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/2020/01/06/Spring/"/>
-
-
-
-
 
   <title>Spring | 我只是一个偶像派程序员~</title>
   
@@ -138,180 +83,138 @@
 
 
 
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
 
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+    <div>
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">我只是一个偶像派程序员~</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
 
   <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
   </div>
 </div>
 
+
 <nav class="site-nav">
   
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Startseite</a>
+
+  </li>
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Schlagwörter</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archiv</a>
 
-  
+  </li>
+  </ul>
+
 </nav>
-
-
-
- </div>
+</div>
     </header>
 
-    <main id="main" class="main">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content">
+          
+
+          <div class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-
-  
-
+  <div class="posts-expand">
+      
   
   
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/06/Spring/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="description" content="Stay hungry, stay foolish">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="我只是一个偶像派程序员~">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">Spring</h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          Spring
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
               
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-06T12:42:25+08:00">
-                2020-01-06
-              </time>
-            
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Erstellt: 2020-01-06 12:42:25 / Geändert am: 12:43:00" itemprop="dateCreated datePublished" datetime="2020-01-06T12:42:25+08:00">2020-01-06</time>
+            </span>
 
           
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
 
       
         <h2 id="1-Spring"><a href="#1-Spring" class="headerlink" title="1.Spring"></a>1.Spring</h2><h3 id="1-Spring-1"><a href="#1-Spring-1" class="headerlink" title="1.Spring"></a>1.Spring</h3><h4 id="1-1简介"><a href="#1-1简介" class="headerlink" title="1.1简介"></a>1.1简介</h4><h4 id="1-2优点"><a href="#1-2优点" class="headerlink" title="1.2优点"></a>1.2优点</h4><ol>
@@ -480,210 +383,143 @@
 <p>AnnocationPoint.java</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Aspect</span> <span class="comment">//标注这个类是一个切面</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Annotation</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Before</span>(<span class="string">"execution(* com.psz.service.UserServiceImpl.*(..))"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">before</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"方法执行前"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@After</span>(<span class="string">"execution(* com.psz.service.UserServiceImpl.*(..))"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">after</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"方法执行后"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="9-execution表达式"><a href="#9-execution表达式" class="headerlink" title="9.execution表达式"></a>9.execution表达式</h2>
-      
     </div>
-    
-    
-    
 
     
-
+    
     
 
-    
+      <footer class="post-footer">
 
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/12/02/北科871数据结构/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/01/11/MyBatis学习/" rel="prev" title="MyBatis学习">
-                MyBatis学习 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-
-  
-
-
-
-        </div>
         
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/12/02/北科871数据结构/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/01/11/MyBatis学习/" rel="next" title="MyBatis学习">
+      MyBatis学习 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
   </div>
 
-  <aside id="sidebar" class="sidebar">
-    
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
     <div class="sidebar-inner">
 
-      
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Inhaltsverzeichnis
+        </li>
+        <li class="sidebar-nav-overview">
+          Übersicht
+        </li>
+      </ul>
 
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.png"
-                alt="Pangshizong" />
-            
-              <p class="site-author-name" itemprop="name">Pangshizong</p>
-              <p class="site-description motion-element" itemprop="description">Stay hungry, stay foolish</p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">23</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
       <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Spring"><span class="nav-number">1.</span> <span class="nav-text">1.Spring</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Spring-1"><span class="nav-number">1.1.</span> <span class="nav-text">1.Spring</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1简介"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2优点"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3组成"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3组成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4拓展"><span class="nav-number">1.1.4.</span> <span class="nav-text">1.4拓展</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-IOC"><span class="nav-number">2.</span> <span class="nav-text">2.IOC</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-图"><span class="nav-number">2.0.1.</span> <span class="nav-text">2.1 图</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Spring配置"><span class="nav-number">3.</span> <span class="nav-text">3.Spring配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-别名"><span class="nav-number">3.0.1.</span> <span class="nav-text">1.别名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Bean的配置"><span class="nav-number">3.0.2.</span> <span class="nav-text">2.Bean的配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-import"><span class="nav-number">3.0.3.</span> <span class="nav-text">3.import</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-依赖注入（Dependency-Injection）"><span class="nav-number">4.</span> <span class="nav-text">4.依赖注入（Dependency Injection）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1注入方式"><span class="nav-number">4.1.</span> <span class="nav-text">4.1注入方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2依赖注入：set注入"><span class="nav-number">4.2.</span> <span class="nav-text">4.2依赖注入：set注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-bean-scope作用域"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 bean scope作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-1单例模式-Singleton"><span class="nav-number">4.3.1.</span> <span class="nav-text">4.3.1单例模式 Singleton</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-2原型模式-Prototype"><span class="nav-number">4.3.2.</span> <span class="nav-text">4.3.2原型模式 Prototype</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-3-Request"><span class="nav-number">4.3.3.</span> <span class="nav-text">4.3.3 Request</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-4Session"><span class="nav-number">4.3.4.</span> <span class="nav-text">4.3.4Session</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Bean自动装配"><span class="nav-number">5.</span> <span class="nav-text">5.Bean自动装配</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1在xml中显示的配置"><span class="nav-number">5.1.</span> <span class="nav-text">5.1在xml中显示的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1-1byName自动装配"><span class="nav-number">5.1.1.</span> <span class="nav-text">5.1.1byName自动装配</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1-2byType自动装配"><span class="nav-number">5.1.2.</span> <span class="nav-text">5.1.2byType自动装配</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2在java中显示配置"><span class="nav-number">5.2.</span> <span class="nav-text">5.2在java中显示配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3Annotation的隐式自动装配（注解）"><span class="nav-number">5.3.</span> <span class="nav-text">5.3Annotation的隐式自动装配（注解）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3-1-AutoWired"><span class="nav-number">5.3.1.</span> <span class="nav-text">5.3.1 AutoWired</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3-2-Component"><span class="nav-number">5.3.2.</span> <span class="nav-text">5.3.2 Component</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3-3-Value-“xxx”"><span class="nav-number">5.3.3.</span> <span class="nav-text">5.3.3 Value(“xxx”)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3-4-Scope"><span class="nav-number">5.3.4.</span> <span class="nav-text">5.3.4 Scope</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4小结"><span class="nav-number">5.4.</span> <span class="nav-text">5.4小结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-完全使用Java方式配置Spring"><span class="nav-number">6.</span> <span class="nav-text">6. 完全使用Java方式配置Spring</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-代理模式"><span class="nav-number">7.</span> <span class="nav-text">7.代理模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1静态代理"><span class="nav-number">7.1.</span> <span class="nav-text">7.1静态代理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#7-1-1静态代理特点"><span class="nav-number">7.1.1.</span> <span class="nav-text">7.1.1静态代理特点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-2动态代理"><span class="nav-number">7.2.</span> <span class="nav-text">7.2动态代理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-AOP面向切面编程"><span class="nav-number">8.</span> <span class="nav-text">8 AOP面向切面编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-1概念"><span class="nav-number">8.1.</span> <span class="nav-text">8.1概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-2【方式一】通过Spring-API实现"><span class="nav-number">8.2.</span> <span class="nav-text">8.2【方式一】通过Spring API实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-3-【方式二】通过自定义类实现AOP"><span class="nav-number">8.3.</span> <span class="nav-text">8.3 【方式二】通过自定义类实现AOP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-4【方式三】通过注解实现"><span class="nav-number">8.4.</span> <span class="nav-text">8.4【方式三】通过注解实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-execution表达式"><span class="nav-number">9.</span> <span class="nav-text">9.execution表达式</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Spring"><span class="nav-number">1.</span> <span class="nav-text">1.Spring</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Spring-1"><span class="nav-number">1.1.</span> <span class="nav-text">1.Spring</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1简介"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2优点"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3组成"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3组成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4拓展"><span class="nav-number">1.1.4.</span> <span class="nav-text">1.4拓展</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-IOC"><span class="nav-number">2.</span> <span class="nav-text">2.IOC</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-图"><span class="nav-number">2.0.1.</span> <span class="nav-text">2.1 图</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Spring配置"><span class="nav-number">3.</span> <span class="nav-text">3.Spring配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-别名"><span class="nav-number">3.0.1.</span> <span class="nav-text">1.别名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Bean的配置"><span class="nav-number">3.0.2.</span> <span class="nav-text">2.Bean的配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-import"><span class="nav-number">3.0.3.</span> <span class="nav-text">3.import</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-依赖注入（Dependency-Injection）"><span class="nav-number">4.</span> <span class="nav-text">4.依赖注入（Dependency Injection）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1注入方式"><span class="nav-number">4.1.</span> <span class="nav-text">4.1注入方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2依赖注入：set注入"><span class="nav-number">4.2.</span> <span class="nav-text">4.2依赖注入：set注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-bean-scope作用域"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 bean scope作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-1单例模式-Singleton"><span class="nav-number">4.3.1.</span> <span class="nav-text">4.3.1单例模式 Singleton</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-2原型模式-Prototype"><span class="nav-number">4.3.2.</span> <span class="nav-text">4.3.2原型模式 Prototype</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-3-Request"><span class="nav-number">4.3.3.</span> <span class="nav-text">4.3.3 Request</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-4Session"><span class="nav-number">4.3.4.</span> <span class="nav-text">4.3.4Session</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Bean自动装配"><span class="nav-number">5.</span> <span class="nav-text">5.Bean自动装配</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1在xml中显示的配置"><span class="nav-number">5.1.</span> <span class="nav-text">5.1在xml中显示的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1-1byName自动装配"><span class="nav-number">5.1.1.</span> <span class="nav-text">5.1.1byName自动装配</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1-2byType自动装配"><span class="nav-number">5.1.2.</span> <span class="nav-text">5.1.2byType自动装配</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2在java中显示配置"><span class="nav-number">5.2.</span> <span class="nav-text">5.2在java中显示配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3Annotation的隐式自动装配（注解）"><span class="nav-number">5.3.</span> <span class="nav-text">5.3Annotation的隐式自动装配（注解）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3-1-AutoWired"><span class="nav-number">5.3.1.</span> <span class="nav-text">5.3.1 AutoWired</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3-2-Component"><span class="nav-number">5.3.2.</span> <span class="nav-text">5.3.2 Component</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3-3-Value-“xxx”"><span class="nav-number">5.3.3.</span> <span class="nav-text">5.3.3 Value(“xxx”)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3-4-Scope"><span class="nav-number">5.3.4.</span> <span class="nav-text">5.3.4 Scope</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4小结"><span class="nav-number">5.4.</span> <span class="nav-text">5.4小结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-完全使用Java方式配置Spring"><span class="nav-number">6.</span> <span class="nav-text">6. 完全使用Java方式配置Spring</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-代理模式"><span class="nav-number">7.</span> <span class="nav-text">7.代理模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1静态代理"><span class="nav-number">7.1.</span> <span class="nav-text">7.1静态代理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#7-1-1静态代理特点"><span class="nav-number">7.1.1.</span> <span class="nav-text">7.1.1静态代理特点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-2动态代理"><span class="nav-number">7.2.</span> <span class="nav-text">7.2动态代理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-AOP面向切面编程"><span class="nav-number">8.</span> <span class="nav-text">8 AOP面向切面编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-1概念"><span class="nav-number">8.1.</span> <span class="nav-text">8.1概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-2【方式一】通过Spring-API实现"><span class="nav-number">8.2.</span> <span class="nav-text">8.2【方式一】通过Spring API实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-3-【方式二】通过自定义类实现AOP"><span class="nav-number">8.3.</span> <span class="nav-text">8.3 【方式二】通过自定义类实现AOP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-4【方式三】通过注解实现"><span class="nav-number">8.4.</span> <span class="nav-text">8.4【方式三】通过注解实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-execution表达式"><span class="nav-number">9.</span> <span class="nav-text">9.execution表达式</span></a></li></ol></div>
+      </div>
       <!--/noindex-->
-      
 
-      
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Pangshizong</p>
+  <div class="site-description" itemprop="description">Stay hungry, stay foolish</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">Artikel</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">schlagwörter</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
 
     </div>
   </aside>
+  <div id="sidebar-dimmer"></div>
 
 
-        
       </div>
     </main>
 
-    <footer id="footer" class="footer">
+    <footer class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Pangshizong</span>
-
-  
 </div>
-
-
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1
+  </div>
   <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
-
-
-
+  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
+  </div>
 
         
 
@@ -693,34 +529,18 @@
 
 
 
-        
+
       </div>
     </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
   </div>
 
   
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
 
 
 
@@ -737,118 +557,8 @@
 
 
 
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
 
   
 
