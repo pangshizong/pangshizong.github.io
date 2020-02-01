@@ -1,53 +1,85 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.7.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
 
-<script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    hostname: new URL('http://yoursite.com').hostname,
-    root: '/',
-    scheme: 'Gemini',
-    version: '7.7.0',
-    exturl: false,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: false,
-    pangu: false,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
-  };
-</script>
 
-  <meta name="description" content="MyBatis1. 简介1.1 什么是MyBatis1.2 持久层1.2.1持久化持久化是将程序数据在持久状态和瞬时状态间转换的机制。 为什么需要持久化服务呢？那是由于内存本身的缺陷引起的 1.2.2持久层 完成持久化工作的代码块 . —-&amp;gt; dao层 【DAO (Data Access Object) 数据访问对象】  1.3 为什么用MyBatis 简化，传统的JDBC太复杂。  2.">
-<meta name="keywords" content="学习">
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="MyBatis1. 简介1.1 什么是MyBatis1.2 持久层1.2.1持久化持久化是将程序数据在持久状态和瞬时状态间转换的机制。 为什么需要持久化服务呢？那是由于内存本身的缺陷引起的 1.2.2持久层 完成持久化工作的代码块 . —-&amp;gt; dao层 【DAO (Data Access Object) 数据访问对象】  1.3 为什么用MyBatis 简化，传统的JDBC太复杂。  2.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MyBatis学习">
 <meta property="og:url" content="http://yoursite.com/2020/01/11/MyBatis学习/index.html">
@@ -55,23 +87,45 @@
 <meta property="og:description" content="MyBatis1. 简介1.1 什么是MyBatis1.2 持久层1.2.1持久化持久化是将程序数据在持久状态和瞬时状态间转换的机制。 为什么需要持久化服务呢？那是由于内存本身的缺陷引起的 1.2.2持久层 完成持久化工作的代码块 . —-&amp;gt; dao层 【DAO (Data Access Object) 数据访问对象】  1.3 为什么用MyBatis 简化，传统的JDBC太复杂。  2.">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://blog.kuangstudy.com/usr/uploads/2019/10/3353849804.png">
-<meta property="og:updated_time" content="2020-01-13T03:06:08.557Z">
+<meta property="og:updated_time" content="2020-02-01T08:02:57.068Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MyBatis学习">
 <meta name="twitter:description" content="MyBatis1. 简介1.1 什么是MyBatis1.2 持久层1.2.1持久化持久化是将程序数据在持久状态和瞬时状态间转换的机制。 为什么需要持久化服务呢？那是由于内存本身的缺陷引起的 1.2.2持久层 完成持久化工作的代码块 . —-&amp;gt; dao层 【DAO (Data Access Object) 数据访问对象】  1.3 为什么用MyBatis 简化，传统的JDBC太复杂。  2.">
 <meta name="twitter:image" content="https://blog.kuangstudy.com/usr/uploads/2019/10/3353849804.png">
 
-<link rel="canonical" href="http://yoursite.com/2020/01/11/MyBatis学习/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome: false,
-    isPost: true
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
   };
 </script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/01/11/MyBatis学习/"/>
+
+
+
+
 
   <title>MyBatis学习 | 我只是一个偶像派程序员~</title>
   
@@ -81,144 +135,180 @@
 
 
 
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-meta">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-    <div>
-      <a href="/" class="brand" rel="start">
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">我只是一个偶像派程序员~</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+      
+        <p class="site-subtitle"></p>
+      
   </div>
 
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
 </div>
-
 
 <nav class="site-nav">
   
-  <ul id="menu" class="menu">
+
+  
+    <ul id="menu" class="menu">
+      
+        
         <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Startseite</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Schlagwörter</a>
-
-  </li>
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archiv</a>
+      
+    </ul>
+  
 
-  </li>
-  </ul>
-
+  
 </nav>
-</div>
+
+
+
+ </div>
     </header>
 
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
+    <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-
-          <div class="content">
+          <div id="content" class="content">
             
 
-  <div class="posts-expand">
-      
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/11/MyBatis学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="Stay hungry, stay foolish">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="我只是一个偶像派程序员~">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          MyBatis学习
-        </h1>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">MyBatis学习</h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-11T23:06:17+08:00">
+                2020-01-11
+              </time>
+            
 
-              <time title="Erstellt: 2020-01-11 23:06:17" itemprop="dateCreated datePublished" datetime="2020-01-11T23:06:17+08:00">2020-01-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2020-01-13 11:06:08" itemprop="dateModified" datetime="2020-01-13T11:06:08+08:00">2020-01-13</time>
-              </span>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+
+      
+      
 
       
         <h1 id="MyBatis"><a href="#MyBatis" class="headerlink" title="MyBatis"></a>MyBatis</h1><h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h2><h3 id="1-1-什么是MyBatis"><a href="#1-1-什么是MyBatis" class="headerlink" title="1.1 什么是MyBatis"></a>1.1 什么是MyBatis</h3><h3 id="1-2-持久层"><a href="#1-2-持久层" class="headerlink" title="1.2 持久层"></a>1.2 持久层</h3><h4 id="1-2-1持久化"><a href="#1-2-1持久化" class="headerlink" title="1.2.1持久化"></a>1.2.1持久化</h4><p>持久化是将程序数据在持久状态和瞬时状态间转换的机制。</p>
@@ -450,143 +540,215 @@
 <li>只有会话提交或者关闭以后，一级缓存中的数据才会转到二级缓存中</li>
 </ul>
 <h3 id="11-5-自定义缓存ehcache"><a href="#11-5-自定义缓存ehcache" class="headerlink" title="11.5 自定义缓存ehcache"></a>11.5 自定义缓存ehcache</h3>
+      
     </div>
-
     
     
     
 
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/学习/" rel="tag"># 学习</a>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/01/06/Spring/" rel="next" title="Spring">
+                <i class="fa fa-chevron-left"></i> Spring
+              </a>
+            
           </div>
 
-        
+          <span class="post-nav-divider"></span>
 
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/01/06/Spring/" rel="prev" title="Spring">
-      <i class="fa fa-chevron-left"></i> Spring
-    </a></div>
-      <div class="post-nav-item"></div>
-    </div>
-      </footer>
-    
+      
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
-  
-  
-  
 
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
           </div>
           
 
-<script>
-  window.addEventListener('tabs:register', () => {
-    let activeClass = CONFIG.comments.activeClass;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+
+          
+
+  
+
+
 
         </div>
+        
           
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
   </div>
 
-  <aside class="sidebar">
+  <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Inhaltsverzeichnis
-        </li>
-        <li class="sidebar-nav-overview">
-          Übersicht
-        </li>
-      </ul>
+      
 
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MyBatis"><span class="nav-number">1.</span> <span class="nav-text">MyBatis</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-简介"><span class="nav-number">1.1.</span> <span class="nav-text">1. 简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-什么是MyBatis"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 什么是MyBatis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-持久层"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 持久层</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-1持久化"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">1.2.1持久化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-2持久层"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">1.2.2持久层</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-为什么用MyBatis"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3 为什么用MyBatis</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-创建"><span class="nav-number">1.2.</span> <span class="nav-text">2. 创建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1搭建环境"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1搭建环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-创建一个模块，编写工具类"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 创建一个模块，编写工具类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-编写代码"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.3 编写代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4注意点"><span class="nav-number">1.2.4.</span> <span class="nav-text">2.4注意点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CRUD"><span class="nav-number">1.3.</span> <span class="nav-text">3. CRUD</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-select"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1 select</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-insert"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2 insert</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-update"><span class="nav-number">1.3.3.</span> <span class="nav-text">3.3 update</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-delete"><span class="nav-number">1.3.4.</span> <span class="nav-text">3.4 delete</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5万能Map"><span class="nav-number">1.3.5.</span> <span class="nav-text">3.5万能Map</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-配置解析"><span class="nav-number">1.4.</span> <span class="nav-text">4. 配置解析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-typeAliases-类型别名"><span class="nav-number">1.4.1.</span> <span class="nav-text">4.1 typeAliases 类型别名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-setting设置"><span class="nav-number">1.4.2.</span> <span class="nav-text">4.2 setting设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-mappers映射器"><span class="nav-number">1.4.3.</span> <span class="nav-text">4.3 mappers映射器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-生命周期和作用域"><span class="nav-number">1.4.4.</span> <span class="nav-text">4.4 生命周期和作用域</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-ResultMap"><span class="nav-number">1.5.</span> <span class="nav-text">5. ResultMap</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-日志"><span class="nav-number">1.6.</span> <span class="nav-text">6. 日志</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-分页"><span class="nav-number">1.7.</span> <span class="nav-text">7. 分页</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-使用Limit分页"><span class="nav-number">1.7.1.</span> <span class="nav-text">7.1 使用Limit分页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-2-使用Mybatis实现分页，核心sql"><span class="nav-number">1.7.2.</span> <span class="nav-text">7.2 使用Mybatis实现分页，核心sql</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-3-PageHelper"><span class="nav-number">1.7.3.</span> <span class="nav-text">7.3 PageHelper</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-使用注解开发"><span class="nav-number">1.8.</span> <span class="nav-text">8. 使用注解开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-一对多，多对一处理"><span class="nav-number">1.9.</span> <span class="nav-text">9. 一对多，多对一处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#9-1-理解"><span class="nav-number">1.9.1.</span> <span class="nav-text">9.1 理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-2-环境"><span class="nav-number">1.9.2.</span> <span class="nav-text">9.2 环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#9-2-1【多对一】实现功能：查学生和对应老师"><span class="nav-number">1.9.2.1.</span> <span class="nav-text">9.2.1【多对一】实现功能：查学生和对应老师</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-2-2【一对多】"><span class="nav-number">1.9.2.2.</span> <span class="nav-text">9.2.2【一对多】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-3一些注意点"><span class="nav-number">1.9.2.3.</span> <span class="nav-text">9.3一些注意点</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-动态SQL"><span class="nav-number">1.10.</span> <span class="nav-text">10. 动态SQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#10-1-if"><span class="nav-number">1.10.1.</span> <span class="nav-text">10.1 if</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-2-trim-where-set"><span class="nav-number">1.10.2.</span> <span class="nav-text">10.2 trim, where, set</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-3-choose-when-otherwish"><span class="nav-number">1.10.3.</span> <span class="nav-text">10.3 choose,when,otherwish</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-4-foreach"><span class="nav-number">1.10.4.</span> <span class="nav-text">10.4 foreach</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-5-SQL片段"><span class="nav-number">1.10.5.</span> <span class="nav-text">10.5 SQL片段</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-缓存"><span class="nav-number">1.11.</span> <span class="nav-text">11. 缓存</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#11-1-概念"><span class="nav-number">1.11.1.</span> <span class="nav-text">11.1 概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-2-MyBatis缓存"><span class="nav-number">1.11.2.</span> <span class="nav-text">11.2 MyBatis缓存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-3-一级缓存-本地缓存"><span class="nav-number">1.11.3.</span> <span class="nav-text">11.3 一级缓存(本地缓存)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一级缓存失效情况"><span class="nav-number">1.11.3.1.</span> <span class="nav-text">一级缓存失效情况</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-4-二级缓存（全局缓存）"><span class="nav-number">1.11.4.</span> <span class="nav-text">11.4 二级缓存（全局缓存）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#11-4-1-步骤"><span class="nav-number">1.11.4.1.</span> <span class="nav-text">11.4.1 步骤</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-5-自定义缓存ehcache"><span class="nav-number">1.11.5.</span> <span class="nav-text">11.5 自定义缓存ehcache</span></a></li></ol></li></ol></li></ol></div>
-      </div>
-      <!--/noindex-->
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Pangshizong</p>
-  <div class="site-description" itemprop="description">Stay hungry, stay foolish</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">23</span>
-          <span class="site-state-item-name">Artikel</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="Pangshizong" />
+            
+              <p class="site-author-name" itemprop="name">Pangshizong</p>
+              <p class="site-description motion-element" itemprop="description">Stay hungry, stay foolish</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
           
-        <span class="site-state-item-count">3</span>
-        <span class="site-state-item-name">schlagwörter</span></a>
-      </div>
-  </nav>
-</div>
 
+          
 
+          
+          
 
-      </div>
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MyBatis"><span class="nav-number">1.</span> <span class="nav-text">MyBatis</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-简介"><span class="nav-number">1.1.</span> <span class="nav-text">1. 简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-什么是MyBatis"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 什么是MyBatis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-持久层"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 持久层</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-1持久化"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">1.2.1持久化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-2持久层"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">1.2.2持久层</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-为什么用MyBatis"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3 为什么用MyBatis</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-创建"><span class="nav-number">1.2.</span> <span class="nav-text">2. 创建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1搭建环境"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1搭建环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-创建一个模块，编写工具类"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 创建一个模块，编写工具类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-编写代码"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.3 编写代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4注意点"><span class="nav-number">1.2.4.</span> <span class="nav-text">2.4注意点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CRUD"><span class="nav-number">1.3.</span> <span class="nav-text">3. CRUD</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-select"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1 select</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-insert"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2 insert</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-update"><span class="nav-number">1.3.3.</span> <span class="nav-text">3.3 update</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-delete"><span class="nav-number">1.3.4.</span> <span class="nav-text">3.4 delete</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5万能Map"><span class="nav-number">1.3.5.</span> <span class="nav-text">3.5万能Map</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-配置解析"><span class="nav-number">1.4.</span> <span class="nav-text">4. 配置解析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-typeAliases-类型别名"><span class="nav-number">1.4.1.</span> <span class="nav-text">4.1 typeAliases 类型别名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-setting设置"><span class="nav-number">1.4.2.</span> <span class="nav-text">4.2 setting设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-mappers映射器"><span class="nav-number">1.4.3.</span> <span class="nav-text">4.3 mappers映射器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-生命周期和作用域"><span class="nav-number">1.4.4.</span> <span class="nav-text">4.4 生命周期和作用域</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-ResultMap"><span class="nav-number">1.5.</span> <span class="nav-text">5. ResultMap</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-日志"><span class="nav-number">1.6.</span> <span class="nav-text">6. 日志</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-分页"><span class="nav-number">1.7.</span> <span class="nav-text">7. 分页</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-使用Limit分页"><span class="nav-number">1.7.1.</span> <span class="nav-text">7.1 使用Limit分页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-2-使用Mybatis实现分页，核心sql"><span class="nav-number">1.7.2.</span> <span class="nav-text">7.2 使用Mybatis实现分页，核心sql</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-3-PageHelper"><span class="nav-number">1.7.3.</span> <span class="nav-text">7.3 PageHelper</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-使用注解开发"><span class="nav-number">1.8.</span> <span class="nav-text">8. 使用注解开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-一对多，多对一处理"><span class="nav-number">1.9.</span> <span class="nav-text">9. 一对多，多对一处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#9-1-理解"><span class="nav-number">1.9.1.</span> <span class="nav-text">9.1 理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-2-环境"><span class="nav-number">1.9.2.</span> <span class="nav-text">9.2 环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#9-2-1【多对一】实现功能：查学生和对应老师"><span class="nav-number">1.9.2.1.</span> <span class="nav-text">9.2.1【多对一】实现功能：查学生和对应老师</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-2-2【一对多】"><span class="nav-number">1.9.2.2.</span> <span class="nav-text">9.2.2【一对多】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-3一些注意点"><span class="nav-number">1.9.2.3.</span> <span class="nav-text">9.3一些注意点</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-动态SQL"><span class="nav-number">1.10.</span> <span class="nav-text">10. 动态SQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#10-1-if"><span class="nav-number">1.10.1.</span> <span class="nav-text">10.1 if</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-2-trim-where-set"><span class="nav-number">1.10.2.</span> <span class="nav-text">10.2 trim, where, set</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-3-choose-when-otherwish"><span class="nav-number">1.10.3.</span> <span class="nav-text">10.3 choose,when,otherwish</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-4-foreach"><span class="nav-number">1.10.4.</span> <span class="nav-text">10.4 foreach</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-5-SQL片段"><span class="nav-number">1.10.5.</span> <span class="nav-text">10.5 SQL片段</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-缓存"><span class="nav-number">1.11.</span> <span class="nav-text">11. 缓存</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#11-1-概念"><span class="nav-number">1.11.1.</span> <span class="nav-text">11.1 概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-2-MyBatis缓存"><span class="nav-number">1.11.2.</span> <span class="nav-text">11.2 MyBatis缓存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-3-一级缓存-本地缓存"><span class="nav-number">1.11.3.</span> <span class="nav-text">11.3 一级缓存(本地缓存)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一级缓存失效情况"><span class="nav-number">1.11.3.1.</span> <span class="nav-text">一级缓存失效情况</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-4-二级缓存（全局缓存）"><span class="nav-number">1.11.4.</span> <span class="nav-text">11.4 二级缓存（全局缓存）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#11-4-1-步骤"><span class="nav-number">1.11.4.1.</span> <span class="nav-text">11.4.1 步骤</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-5-自定义缓存ehcache"><span class="nav-number">1.11.5.</span> <span class="nav-text">11.5 自定义缓存ehcache</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
 
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
 
 
+        
       </div>
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="footer-inner">
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Pangshizong</span>
+
+  
 </div>
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1
-  </div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
-  </div>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
 
         
 
@@ -596,18 +758,34 @@
 
 
 
-
+        
       </div>
     </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/pisces.js"></script>
-<script src="/js/next-boot.js"></script>
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
 
 
 
@@ -624,8 +802,118 @@
 
 
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
 
 
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
 
   
 
