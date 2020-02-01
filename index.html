@@ -1,52 +1,85 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.7.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
 
-<script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    hostname: new URL('http://yoursite.com').hostname,
-    root: '/',
-    scheme: 'Gemini',
-    version: '7.7.0',
-    exturl: false,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: false,
-    pangu: false,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
-  };
-</script>
 
-  <meta name="description" content="Stay hungry, stay foolish">
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Stay hungry, stay foolish">
 <meta property="og:type" content="website">
 <meta property="og:title" content="我只是一个偶像派程序员~">
 <meta property="og:url" content="http://yoursite.com/index.html">
@@ -57,17 +90,39 @@
 <meta name="twitter:title" content="我只是一个偶像派程序员~">
 <meta name="twitter:description" content="Stay hungry, stay foolish">
 
-<link rel="canonical" href="http://yoursite.com/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome: true,
-    isPost: false
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
   };
 </script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
 
   <title>我只是一个偶像派程序员~</title>
   
@@ -77,135 +132,165 @@
 
 
 
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-meta">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-    <div>
-      <a href="/" class="brand" rel="start">
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">我只是一个偶像派程序员~</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+      
+        <p class="site-subtitle"></p>
+      
   </div>
 
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
 </div>
-
 
 <nav class="site-nav">
   
-  <ul id="menu" class="menu">
+
+  
+    <ul id="menu" class="menu">
+      
+        
         <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Startseite</a>
-
-  </li>
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archiv</a>
+      
+    </ul>
+  
 
-  </li>
-  </ul>
-
+  
 </nav>
-</div>
+
+
+
+ </div>
     </header>
 
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
+    <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-
-          <div class="content">
+          <div id="content" class="content">
             
+  <section id="posts" class="posts-expand">
+    
+      
 
-  <div class="posts-expand">
-        
+  
+
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/11/MyBatis学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="Stay hungry, stay foolish">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="我只是一个偶像派程序员~">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/11/MyBatis学习/" class="post-title-link" itemprop="url">MyBatis学习</a>
-        </h1>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/11/MyBatis学习/" itemprop="url">MyBatis学习</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-11T23:06:17+08:00">
+                2020-01-11
+              </time>
+            
 
-              <time title="Erstellt: 2020-01-11 23:06:17" itemprop="dateCreated datePublished" datetime="2020-01-11T23:06:17+08:00">2020-01-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2020-01-13 11:06:08" itemprop="dateModified" datetime="2020-01-13T11:06:08+08:00">2020-01-13</time>
-              </span>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -213,7 +298,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="MyBatis"><a href="#MyBatis" class="headerlink" title="MyBatis"></a>MyBatis</h1><h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h2><h3 id="1-1-什么是MyBatis"><a href="#1-1-什么是MyBatis" class="headerlink" title="1.1 什么是MyBatis"></a>1.1 什么是MyBatis</h3><h3 id="1-2-持久层"><a href="#1-2-持久层" class="headerlink" title="1.2 持久层"></a>1.2 持久层</h3><h4 id="1-2-1持久化"><a href="#1-2-1持久化" class="headerlink" title="1.2.1持久化"></a>1.2.1持久化</h4><p>持久化是将程序数据在持久状态和瞬时状态间转换的机制。</p>
+      
+
+      
+        
+          
+            <h1 id="MyBatis"><a href="#MyBatis" class="headerlink" title="MyBatis"></a>MyBatis</h1><h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h2><h3 id="1-1-什么是MyBatis"><a href="#1-1-什么是MyBatis" class="headerlink" title="1.1 什么是MyBatis"></a>1.1 什么是MyBatis</h3><h3 id="1-2-持久层"><a href="#1-2-持久层" class="headerlink" title="1.2 持久层"></a>1.2 持久层</h3><h4 id="1-2-1持久化"><a href="#1-2-1持久化" class="headerlink" title="1.2.1持久化"></a>1.2.1持久化</h4><p>持久化是将程序数据在持久状态和瞬时状态间转换的机制。</p>
 <p>为什么需要持久化服务呢？那是由于内存本身的缺陷引起的</p>
 <h4 id="1-2-2持久层"><a href="#1-2-2持久层" class="headerlink" title="1.2.2持久层"></a>1.2.2持久层</h4><ul>
 <li>完成持久化工作的代码块 . —-&gt; dao层 【DAO (Data Access Object) 数据访问对象】</li>
@@ -442,56 +532,112 @@
 <li>只有会话提交或者关闭以后，一级缓存中的数据才会转到二级缓存中</li>
 </ul>
 <h3 id="11-5-自定义缓存ehcache"><a href="#11-5-自定义缓存ehcache" class="headerlink" title="11.5 自定义缓存ehcache"></a>11.5 自定义缓存ehcache</h3>
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
+
+
+    
+      
+
+  
+
   
   
   
 
-        
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/06/Spring/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="Stay hungry, stay foolish">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="我只是一个偶像派程序员~">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/06/Spring/" class="post-title-link" itemprop="url">Spring</a>
-        </h1>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/06/Spring/" itemprop="url">Spring</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
               
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-06T12:42:25+08:00">
+                2020-01-06
+              </time>
+            
 
-              <time title="Erstellt: 2020-01-06 12:42:25 / Geändert am: 12:43:00" itemprop="dateCreated datePublished" datetime="2020-01-06T12:42:25+08:00">2020-01-06</time>
-            </span>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -499,7 +645,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-Spring"><a href="#1-Spring" class="headerlink" title="1.Spring"></a>1.Spring</h2><h3 id="1-Spring-1"><a href="#1-Spring-1" class="headerlink" title="1.Spring"></a>1.Spring</h3><h4 id="1-1简介"><a href="#1-1简介" class="headerlink" title="1.1简介"></a>1.1简介</h4><h4 id="1-2优点"><a href="#1-2优点" class="headerlink" title="1.2优点"></a>1.2优点</h4><ol>
+      
+
+      
+        
+          
+            <h2 id="1-Spring"><a href="#1-Spring" class="headerlink" title="1.Spring"></a>1.Spring</h2><h3 id="1-Spring-1"><a href="#1-Spring-1" class="headerlink" title="1.Spring"></a>1.Spring</h3><h4 id="1-1简介"><a href="#1-1简介" class="headerlink" title="1.1简介"></a>1.1简介</h4><h4 id="1-2优点"><a href="#1-2优点" class="headerlink" title="1.2优点"></a>1.2优点</h4><ol>
 <li>控制反转IOC</li>
 <li>面向切面AOP</li>
 </ol>
@@ -665,56 +816,112 @@
 <p>AnnocationPoint.java</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Aspect</span> <span class="comment">//标注这个类是一个切面</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Annotation</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Before</span>(<span class="string">"execution(* com.psz.service.UserServiceImpl.*(..))"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">before</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"方法执行前"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@After</span>(<span class="string">"execution(* com.psz.service.UserServiceImpl.*(..))"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">after</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"方法执行后"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="9-execution表达式"><a href="#9-execution表达式" class="headerlink" title="9.execution表达式"></a>9.execution表达式</h2>
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
+
+
+    
+      
+
+  
+
   
   
   
 
-        
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/02/北科871数据结构/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="Stay hungry, stay foolish">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="我只是一个偶像派程序员~">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/02/北科871数据结构/" class="post-title-link" itemprop="url">Unbenannt</a>
-        </h1>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/02/北科871数据结构/" itemprop="url">未命名</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
               
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-02T18:15:23+08:00">
+                2019-12-02
+              </time>
+            
 
-              <time title="Erstellt: 2019-12-02 18:15:23 / Geändert am: 17:55:44" itemprop="dateCreated datePublished" datetime="2019-12-02T18:15:23+08:00">2019-12-02</time>
-            </span>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -722,7 +929,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="数据结构代码题"><a href="#数据结构代码题" class="headerlink" title="数据结构代码题"></a>数据结构代码题</h1><h3 id="1-二叉树"><a href="#1-二叉树" class="headerlink" title="1. 二叉树"></a>1. 二叉树</h3><h4 id="1-删除排序二叉树某一节点算法"><a href="#1-删除排序二叉树某一节点算法" class="headerlink" title="1.删除排序二叉树某一节点算法"></a>1.删除排序二叉树某一节点算法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">typedef struct node &#123;</span><br><span class="line">	int date;</span><br><span class="line">	struct node *lchild, *rchild;</span><br><span class="line">&#125;	btnode,*blink;</span><br><span class="line">//二叉排序树删除某节点算法</span><br><span class="line">void DELETEP(blink p) &#123;</span><br><span class="line">	blink q, s;</span><br><span class="line">	q = p;</span><br><span class="line">	s = p-&gt;lchild;</span><br><span class="line">	while (s-&gt;rchild) &#123;</span><br><span class="line">		s = s-&gt;rchild;</span><br><span class="line">	&#125;</span><br><span class="line">	p-&gt;date = s-&gt;date;</span><br><span class="line">	if (q != p) &#123;</span><br><span class="line">		q-&gt;rchild = s-&gt;lchild;</span><br><span class="line">	&#125;</span><br><span class="line">	else &#123;</span><br><span class="line">		q-&gt;lchild = s-&gt;lchild;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+
+      
+        
+          
+            <h1 id="数据结构代码题"><a href="#数据结构代码题" class="headerlink" title="数据结构代码题"></a>数据结构代码题</h1><h3 id="1-二叉树"><a href="#1-二叉树" class="headerlink" title="1. 二叉树"></a>1. 二叉树</h3><h4 id="1-删除排序二叉树某一节点算法"><a href="#1-删除排序二叉树某一节点算法" class="headerlink" title="1.删除排序二叉树某一节点算法"></a>1.删除排序二叉树某一节点算法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">typedef struct node &#123;</span><br><span class="line">	int date;</span><br><span class="line">	struct node *lchild, *rchild;</span><br><span class="line">&#125;	btnode,*blink;</span><br><span class="line">//二叉排序树删除某节点算法</span><br><span class="line">void DELETEP(blink p) &#123;</span><br><span class="line">	blink q, s;</span><br><span class="line">	q = p;</span><br><span class="line">	s = p-&gt;lchild;</span><br><span class="line">	while (s-&gt;rchild) &#123;</span><br><span class="line">		s = s-&gt;rchild;</span><br><span class="line">	&#125;</span><br><span class="line">	p-&gt;date = s-&gt;date;</span><br><span class="line">	if (q != p) &#123;</span><br><span class="line">		q-&gt;rchild = s-&gt;lchild;</span><br><span class="line">	&#125;</span><br><span class="line">	else &#123;</span><br><span class="line">		q-&gt;lchild = s-&gt;lchild;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="2-构造二叉排序树"><a href="#2-构造二叉排序树" class="headerlink" title="2.构造二叉排序树"></a>2.构造二叉排序树</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">typedef struct node&#123;</span><br><span class="line">	int data;</span><br><span class="line">	struct node *Lchild, *Rchild;</span><br><span class="line">&#125;bnode, *btlink;</span><br><span class="line"></span><br><span class="line">btlink CBTREE(btlink bt, int A[],int n) &#123;</span><br><span class="line">	int i;</span><br><span class="line">	btlink S;</span><br><span class="line">	bt = NULL;</span><br><span class="line">	for (int i = 0; i &lt; n; i++) &#123;</span><br><span class="line">		S= (btlink)malloc(sizeof(bnode));</span><br><span class="line">		S-&gt;data = A[i];</span><br><span class="line">		S-&gt;Rchild = S-&gt;Lchild = NULL;</span><br><span class="line">		bt = BINSERT(bt,S);</span><br><span class="line">	&#125;</span><br><span class="line">	return (bt);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">btlink BINSERT(btlink bt, btlink s) &#123;</span><br><span class="line">	btlink p, q;</span><br><span class="line">	p = bt;</span><br><span class="line">	q = NULL;</span><br><span class="line">	if (bt == NULL) &#123;</span><br><span class="line">		return s;</span><br><span class="line">	&#125;</span><br><span class="line">	while (p) &#123;</span><br><span class="line">		q = p;</span><br><span class="line">		if (s-&gt;data == p-&gt;data) &#123;</span><br><span class="line">			free(s);</span><br><span class="line">			return(bt);</span><br><span class="line">		&#125;</span><br><span class="line">		if (s-&gt;data &lt; p-&gt;data) &#123;</span><br><span class="line">			p = p-&gt;Lchild;</span><br><span class="line">		&#125;else &#123;</span><br><span class="line">			p = p-&gt;Rchild;</span><br><span class="line">		&#125;</span><br><span class="line">		if (s-&gt;data == q-&gt;data) &#123;</span><br><span class="line">			q-&gt;Lchild=s;</span><br><span class="line">		&#125;</span><br><span class="line">		else &#123;</span><br><span class="line">			q-&gt;Rchild=s;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return (bt);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>####3.    非递归遍历完全二叉树(借助栈)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">typedef struct BiNode</span><br><span class="line">&#123;	int data;</span><br><span class="line">	struct BiNode *lchild,*rchild;</span><br><span class="line">&#125;BiNode, *BiTree;</span><br><span class="line"></span><br><span class="line">//中序非递归遍历</span><br><span class="line">void inOrderTrss(BiTree T) &#123;</span><br><span class="line">	Stack&lt;BiTree&gt; stack;</span><br><span class="line">	BiTree p=T;</span><br><span class="line">	while(p||!stack.empty())</span><br><span class="line">	&#123;</span><br><span class="line">      if(p!=null)&#123;</span><br><span class="line">        stack.push(p);</span><br><span class="line">        p=p-&gt;lchild;</span><br><span class="line">      &#125;else&#123;</span><br><span class="line">        p=stack.top();</span><br><span class="line">        printf(&quot;%c&quot;,p-&gt;data);</span><br><span class="line">        stack.pop();</span><br><span class="line">        p=p-&gt;rchild;</span><br><span class="line">      &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -764,56 +976,112 @@
 <h4 id="5-求单链表倒数第K个节点"><a href="#5-求单链表倒数第K个节点" class="headerlink" title="5.    求单链表倒数第K个节点"></a>5.    求单链表倒数第K个节点</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">//设置快慢指针，当快慢指针步长为K时候，两个指针速度相同向后走；当快指针走到队尾时候，快指针指向倒数第k个元素。</span><br><span class="line">ListNode findElem(ListNode *head,int k)</span><br><span class="line">&#123;</span><br><span class="line">	LisNode *p1=head;</span><br><span class="line">	ListNode *p2=head-&gt;next;</span><br><span class="line">	int i=1;</span><br><span class="line">	while(p2!=null)&#123;</span><br><span class="line">      p2=p2-&gt;next;</span><br><span class="line">      ++i;</span><br><span class="line">      if(i&gt;k)&#123;</span><br><span class="line">        p1=p-next;</span><br><span class="line">      &#125;</span><br><span class="line">	&#125;</span><br><span class="line">	if(p==head)</span><br><span class="line">		return 0;</span><br><span class="line">	else&#123;</span><br><span class="line">      return p-&gt;data;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="6-将单链表倒序输出-可以利用栈"><a href="#6-将单链表倒序输出-可以利用栈" class="headerlink" title="6.将单链表倒序输出(可以利用栈)"></a>6.将单链表倒序输出(可以利用栈)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">typedef struct&#123;</span><br><span class="line">  int top;</span><br><span class="line">  elem index[maxn];</span><br><span class="line">&#125;Stack;</span><br><span class="line"></span><br><span class="line">void ReverSe(LinkList L)&#123;</span><br><span class="line">  Stack  stack;</span><br><span class="line">  stack.top=-1;</span><br><span class="line">  while(L-&gt;next)&#123;</span><br><span class="line">    stack.index[++top]=L-&gt;next-&gt;data;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="7-领接表的度"><a href="#7-领接表的度" class="headerlink" title="7.    领接表的度"></a>7.    领接表的度</h4>
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
+
+
+    
+      
+
+  
+
   
   
   
 
-        
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/16/三十五天/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="Stay hungry, stay foolish">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="我只是一个偶像派程序员~">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/16/三十五天/" class="post-title-link" itemprop="url">三十五天</a>
-        </h1>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/16/三十五天/" itemprop="url">三十五天</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
               
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-16T23:26:23+08:00">
+                2019-11-16
+              </time>
+            
 
-              <time title="Erstellt: 2019-11-16 23:26:23 / Geändert am: 23:33:25" itemprop="dateCreated datePublished" datetime="2019-11-16T23:26:23+08:00">2019-11-16</time>
-            </span>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -821,60 +1089,121 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>​    好久没有写东西了，最近忙考研，还有三十五天，嗯，再过半小时就是三十四天了。有点像高三时候，数着日子过，还蛮快的。</p>
+      
+
+      
+        
+          
+            <p>​    好久没有写东西了，最近忙考研，还有三十五天，嗯，再过半小时就是三十四天了。有点像高三时候，数着日子过，还蛮快的。</p>
 <p>​    目前复习的还行吧，专业课有点问题，其他进度还行。复习有崩溃的时候，也有开心的时候。现在希望时间慢一点，让我来得及复习。。。每天在图书馆顶楼背书，那个场景，还是挺那什么的，值得回忆。最近情绪变化很大，要努力克服。</p>
 <p>​    明天要下雨了，嗯，南京又要大降温了，so cold，希望最近不要感冒。<br>​    最近天天起不来，立了很多flag，都XXX。要争取早起，冲。。。。</p>
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
+
+
+    
+      
+
+  
+
   
   
   
 
-        
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/18/Remember-who-you-are/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="Stay hungry, stay foolish">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="我只是一个偶像派程序员~">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/07/18/Remember-who-you-are/" class="post-title-link" itemprop="url">Remember who you are</a>
-        </h1>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/18/Remember-who-you-are/" itemprop="url">Remember who you are</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
               
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-18T23:22:32+08:00">
+                2019-07-18
+              </time>
+            
 
-              <time title="Erstellt: 2019-07-18 23:22:32 / Geändert am: 23:36:51" itemprop="dateCreated datePublished" datetime="2019-07-18T23:22:32+08:00">2019-07-18</time>
-            </span>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -882,7 +1211,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>第一次听《狮子王》的故事，是宇哥讲的，好感动。</p>
+      
+
+      
+        
+          
+            <p>第一次听《狮子王》的故事，是宇哥讲的，好感动。</p>
 <p>第一次看《狮子王》，还是好感动。</p>
 <p>一个人留校20天了，每次晚上失眠都会想放弃，有点难过。想回家了。</p>
 <p>嗯，做自己害怕的事。</p>
@@ -890,62 +1224,112 @@
 <h4 id="“Remember-who-you-are-you-are-my-son-and-the-one-true-king-Remember-who-you-are-”"><a href="#“Remember-who-you-are-you-are-my-son-and-the-one-true-king-Remember-who-you-are-”" class="headerlink" title="“Remember who you are,you are my son,and the one true king.Remember who you are.”"></a>“Remember who you are,you are my son,and the one true king.Remember who you are.”</h4><h4 id="“You-are-more-than-what-you-have-become-”"><a href="#“You-are-more-than-what-you-have-become-”" class="headerlink" title="“You are more than what you have become.”"></a>“You are more than what you have become.”</h4><p><img src="https://cy-pic.kuaizhan.com/g3/e1/f0/eb0c-d4a7-41c6-9321-3bdc8412d14381" alt=""></p>
 <p><img src="https://cy-pic.kuaizhan.com/g3/43/88/7fe0-225f-400e-8763-51c643a8837a72" alt=""></p>
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
+
+
+    
+      
+
+  
+
   
   
   
 
-        
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/01/四分之三/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="Stay hungry, stay foolish">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="我只是一个偶像派程序员~">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/07/01/四分之三/" class="post-title-link" itemprop="url">四分之三</a>
-        </h1>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/01/四分之三/" itemprop="url">四分之三</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-01T21:56:16+08:00">
+                2019-07-01
+              </time>
+            
 
-              <time title="Erstellt: 2019-07-01 21:56:16" itemprop="dateCreated datePublished" datetime="2019-07-01T21:56:16+08:00">2019-07-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2019-07-18 23:20:24" itemprop="dateModified" datetime="2019-07-18T23:20:24+08:00">2019-07-18</time>
-              </span>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -953,61 +1337,122 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>​    这个标题的含义就是大学走完了四分之三，好快。很难过，不想时间溜走，这三年好像什么都没学，有点遗憾和后悔，当然也有很多让人回忆的时候，嗯。</p>
+      
+
+      
+        
+          
+            <p>​    这个标题的含义就是大学走完了四分之三，好快。很难过，不想时间溜走，这三年好像什么都没学，有点遗憾和后悔，当然也有很多让人回忆的时候，嗯。</p>
 <p>​    暑假一个人留校，有点孤单，又不孤独。最近真的水逆，做噩梦，发烧，地铁故障，拉肚子，各种倒霉事，想想要是在家多爽天天可以大吃大喝哈哈。Anyway，既然选择了留校，就要坚持下去，考研也是一样，这是我给自己的承诺。既然做出了承诺，就要完成。今天做了高数题，十错九，你看吧欠下的总要还的。</p>
 <p>​    想了想去也没什么想写的，就这样吧，好好学习。</p>
 <p>​    <img src="http://i1.fuimg.com/630430/c7d860a233201867.jpg" alt="Markdown"></p>
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
+
+
+    
+      
+
+  
+
   
   
   
 
-        
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/19/C语言快速复习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="Stay hungry, stay foolish">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="我只是一个偶像派程序员~">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/06/19/C语言快速复习/" class="post-title-link" itemprop="url">C语言快速复习</a>
-        </h1>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/06/19/C语言快速复习/" itemprop="url">C语言快速复习</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
               
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-19T10:50:22+08:00">
+                2019-06-19
+              </time>
+            
 
-              <time title="Erstellt: 2019-06-19 10:50:22 / Geändert am: 10:53:33" itemprop="dateCreated datePublished" datetime="2019-06-19T10:50:22+08:00">2019-06-19</time>
-            </span>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -1015,7 +1460,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="欠下的总要还的！"><a href="#欠下的总要还的！" class="headerlink" title="欠下的总要还的！"></a>欠下的总要还的！</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">include &quot;stdafx.h&quot;</span><br><span class="line">include&lt;stdio.h&gt;</span><br><span class="line">include&lt;Windows.h&gt;</span><br><span class="line">define PI 3.1415  //宏定义</span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    int a=11;</span><br><span class="line">    float b = 123.145f;</span><br><span class="line">    char c;</span><br><span class="line">    char str[] = &quot;hello&quot;;</span><br><span class="line">    for (int i = 0; str[i] != &apos;\0&apos;; i++) &#123;</span><br><span class="line">    	printf(&quot;%c&quot;, str[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%s&quot;, str);</span><br><span class="line"></span><br><span class="line">    system(&quot;pause&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+
+      
+        
+          
+            <h4 id="欠下的总要还的！"><a href="#欠下的总要还的！" class="headerlink" title="欠下的总要还的！"></a>欠下的总要还的！</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">include &quot;stdafx.h&quot;</span><br><span class="line">include&lt;stdio.h&gt;</span><br><span class="line">include&lt;Windows.h&gt;</span><br><span class="line">define PI 3.1415  //宏定义</span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    int a=11;</span><br><span class="line">    float b = 123.145f;</span><br><span class="line">    char c;</span><br><span class="line">    char str[] = &quot;hello&quot;;</span><br><span class="line">    for (int i = 0; str[i] != &apos;\0&apos;; i++) &#123;</span><br><span class="line">    	printf(&quot;%c&quot;, str[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%s&quot;, str);</span><br><span class="line"></span><br><span class="line">    system(&quot;pause&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">输入scanf(&quot;%2d&quot;,a);输出用prinf(&quot;%7.4f&quot;,a);%d  %c 字符输入输出： getchar()，没有参数；putchar(参数就是输出的字符);</span><br><span class="line">宏定义 #define A 3.1415;和const常量 </span><br><span class="line">数学 include&lt;math.h&gt; sqrt(x)，fabs(x), log(x) exp(x), pow(x,y), </span><br><span class="line">&lt;stdlib.h&gt;\</span><br><span class="line">rand()随机函数</span><br><span class="line">	1. rand()%b  [0,b-1]</span><br><span class="line">	2. rand()%b+a [a,a+b-1]</span><br><span class="line">srand()种子 ，可以设置srand(time(NULL)) time在&lt;time.h&gt;中</span><br><span class="line">转义： \n换行,\0字符串结束标志，\b退格，\a响铃</span><br><span class="line">ASCIll码表： a--97 A--65 （相差32）</span><br><span class="line">EOF -1</span><br><span class="line">exit();终止,在&lt;stdlib.h&gt;中</span><br><span class="line">switch(表达式）</span><br><span class="line">&#123;</span><br><span class="line">	case &apos;=&apos;:xxx </span><br><span class="line">			break;</span><br><span class="line">	case &apos;+&apos;: xxx</span><br><span class="line">			break;</span><br><span class="line">	default:</span><br><span class="line">			除此之外的情况；</span><br><span class="line">&#125;</span><br><span class="line">位运算符;与&amp;(两个都是1 为1)，或|（有1 为1），亦或^（不一样为1），取反-，左移&lt;&lt;，右移&gt;&gt;。</span><br><span class="line">判断奇偶性：a&amp;1  </span><br><span class="line">break跳出当前层循环，continue进行下一次循环</span><br></pre></td></tr></table></figure>
 <p>====函数==================================================</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int Fuck( int a)</span><br><span class="line">main()</span><br><span class="line">int Fuck( int a)//如果写在main后面，要在前面声明一下。  默认返回类型是int型。</span><br><span class="line">&#123;</span><br><span class="line">a++;</span><br><span class="line">return a; 返回值可以是数组以外的任何类型。良好风格：即便是void,也返回return;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1041,56 +1491,112 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum &#123;yes，no，none&#125; answer</span><br></pre></td></tr></table></figure>
 <p>===============文件操作===========</p>
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
+
+
+    
+      
+
+  
+
   
   
   
 
-        
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/14/MD语法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="Stay hungry, stay foolish">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="我只是一个偶像派程序员~">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/06/14/MD语法/" class="post-title-link" itemprop="url">MD语法</a>
-        </h1>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/06/14/MD语法/" itemprop="url">MD语法</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
               
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-14T13:26:32+08:00">
+                2019-06-14
+              </time>
+            
 
-              <time title="Erstellt: 2019-06-14 13:26:32 / Geändert am: 13:26:57" itemprop="dateCreated datePublished" datetime="2019-06-14T13:26:32+08:00">2019-06-14</time>
-            </span>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -1098,7 +1604,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="1-标题用”-”，几级标题，就在前面加几个“-”"><a href="#1-标题用”-”，几级标题，就在前面加几个“-”" class="headerlink" title="1. 标题用”#”，几级标题，就在前面加几个“#”"></a>1. 标题用”#”，几级标题，就在前面加几个“#”</h4><h4 id="2-列表"><a href="#2-列表" class="headerlink" title="2. 列表"></a>2. 列表</h4><h5 id="无序列表，用-来实现"><a href="#无序列表，用-来实现" class="headerlink" title="无序列表，用*来实现"></a>无序列表，用*来实现</h5><h5 id="有序列表，数字后加“-”"><a href="#有序列表，数字后加“-”" class="headerlink" title="有序列表，数字后加“.”"></a>有序列表，数字后加“.”</h5><h4 id="3-区块引用-符号“-gt-”-有多级引用，根据“-gt-”数量"><a href="#3-区块引用-符号“-gt-”-有多级引用，根据“-gt-”数量" class="headerlink" title="3. 区块引用 符号“&gt;” 有多级引用，根据“&gt;”数量"></a>3. 区块引用 符号“&gt;” 有多级引用，根据“&gt;”数量</h4><blockquote>
+      
+
+      
+        
+          
+            <h4 id="1-标题用”-”，几级标题，就在前面加几个“-”"><a href="#1-标题用”-”，几级标题，就在前面加几个“-”" class="headerlink" title="1. 标题用”#”，几级标题，就在前面加几个“#”"></a>1. 标题用”#”，几级标题，就在前面加几个“#”</h4><h4 id="2-列表"><a href="#2-列表" class="headerlink" title="2. 列表"></a>2. 列表</h4><h5 id="无序列表，用-来实现"><a href="#无序列表，用-来实现" class="headerlink" title="无序列表，用*来实现"></a>无序列表，用*来实现</h5><h5 id="有序列表，数字后加“-”"><a href="#有序列表，数字后加“-”" class="headerlink" title="有序列表，数字后加“.”"></a>有序列表，数字后加“.”</h5><h4 id="3-区块引用-符号“-gt-”-有多级引用，根据“-gt-”数量"><a href="#3-区块引用-符号“-gt-”-有多级引用，根据“-gt-”数量" class="headerlink" title="3. 区块引用 符号“&gt;” 有多级引用，根据“&gt;”数量"></a>3. 区块引用 符号“&gt;” 有多级引用，根据“&gt;”数量</h4><blockquote>
 <blockquote>
 <p>标题</p>
 <blockquote>
@@ -1125,56 +1636,112 @@
 </blockquote>
 <h4 id="9-删除，用“-”包起来"><a href="#9-删除，用“-”包起来" class="headerlink" title="9.删除，用“~~”包起来"></a>9.删除，用“~~”包起来</h4><p><del>删除我吧</del></p>
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
+
+
+    
+      
+
+  
+
   
   
   
 
-        
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/30/闯入者/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="Stay hungry, stay foolish">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="我只是一个偶像派程序员~">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/03/30/闯入者/" class="post-title-link" itemprop="url">闯入者</a>
-        </h1>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/30/闯入者/" itemprop="url">闯入者</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
               
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-30T22:47:40+08:00">
+                2019-03-30
+              </time>
+            
 
-              <time title="Erstellt: 2019-03-30 22:47:40 / Geändert am: 22:48:15" itemprop="dateCreated datePublished" datetime="2019-03-30T22:47:40+08:00">2019-03-30</time>
-            </span>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -1182,58 +1749,119 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="http://wx4.sinaimg.cn/large/d9c98269gy1g1l7fatql1j21hc140dnm.jpg" alt=""></p>
+      
 
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
         
+          
+            <p><img src="http://wx4.sinaimg.cn/large/d9c98269gy1g1l7fatql1j21hc140dnm.jpg" alt=""></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/30/天之都/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="Stay hungry, stay foolish">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="我只是一个偶像派程序员~">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/03/30/天之都/" class="post-title-link" itemprop="url">天之都</a>
-        </h1>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/30/天之都/" itemprop="url">天之都</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
               
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-30T18:07:47+08:00">
+                2019-03-30
+              </time>
+            
 
-              <time title="Erstellt: 2019-03-30 18:07:47 / Geändert am: 22:04:06" itemprop="dateCreated datePublished" datetime="2019-03-30T18:07:47+08:00">2019-03-30</time>
-            </span>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -1241,7 +1869,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>​    打卡南京网红地“天之都大厦”，周五背着三脚架，风尘仆仆去市区。妈的拆开一看，快接板没带，哔了狗了，这就跟上过厕所不带纸是一个吊样。最后急中生智，拿一包纸代替，和L出发啦。坐着电梯到37楼，就看到了好多情侣或朋友在拍照。 </p>
+      
+
+      
+        
+          
+            <p>​    打卡南京网红地“天之都大厦”，周五背着三脚架，风尘仆仆去市区。妈的拆开一看，快接板没带，哔了狗了，这就跟上过厕所不带纸是一个吊样。最后急中生智，拿一包纸代替，和L出发啦。坐着电梯到37楼，就看到了好多情侣或朋友在拍照。 </p>
 <p>​    感觉视角还行吧，可以俯瞰蓝鲸，唯一的小遗憾就是天气不太好&amp;不可以使用三脚架。拍了很多照片，回来看都糊了。本想拍车轨，也没有拍成。</p>
 <p>​    今天下午跟L在COSTA，我喜欢那种感觉，下午懒洋洋的坐在椅子上，听歌，做着自己的事（想静静的<del>装逼</del>看书），然后时不时抿一口咖啡，吃一点蛋糕，Nice。</p>
 <p>​    今晚宇哥请吃烧烤，服务员小姐姐长得像L，哈哈哈。</p>
@@ -1252,25 +1885,45 @@
 <p><img src="http://wx2.sinaimg.cn/large/d9c98269ly1g1kzpbvi7kj24mo3347wk.jpg" alt=""></p>
 <p><img src="http://wx2.sinaimg.cn/large/d9c98269ly1g1kzparsy4j21eq0nchdv.jpg" alt=""></p>
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
         <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
+      
+    </footer>
   </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Nächste Seite"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1278,105 +1931,120 @@
           </div>
           
 
-<script>
-  window.addEventListener('tabs:register', () => {
-    let activeClass = CONFIG.comments.activeClass;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+
+          
 
         </div>
+        
           
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
   </div>
 
-  <aside class="sidebar">
+  <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Inhaltsverzeichnis
-        </li>
-        <li class="sidebar-nav-overview">
-          Übersicht
-        </li>
-      </ul>
+      
 
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
+      
 
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Pangshizong</p>
-  <div class="site-description" itemprop="description">Stay hungry, stay foolish</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">23</span>
-          <span class="site-state-item-name">Artikel</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">schlagwörter</span>
-      </div>
-  </nav>
-</div>
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="Pangshizong" />
+            
+              <p class="site-author-name" itemprop="name">Pangshizong</p>
+              <p class="site-description motion-element" itemprop="description">Stay hungry, stay foolish</p>
+          </div>
 
+          <nav class="site-state motion-element">
 
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
 
-      </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
 
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
 
 
+        
       </div>
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="footer-inner">
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Pangshizong</span>
+
+  
 </div>
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1
-  </div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
-  </div>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
 
         
 
@@ -1386,18 +2054,34 @@
 
 
 
-
+        
       </div>
     </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/pisces.js"></script>
-<script src="/js/next-boot.js"></script>
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
 
 
 
@@ -1414,8 +2098,114 @@
 
 
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
 
 
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
 
   
 
