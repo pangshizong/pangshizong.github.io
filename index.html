@@ -242,6 +242,605 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/05/面向对象/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pangshizong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我只是一个偶像派程序员~">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/05/面向对象/" itemprop="url">面向对象</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-05T14:45:30+08:00">
+                2020-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-面向对象"><a href="#1-面向对象" class="headerlink" title="1. 面向对象"></a>1. 面向对象</h2><ul>
+<li>Object-Oriented Programming</li>
+<li>本质：<strong>以类的方式组织代码，以对象的组织（封装）数据</strong></li>
+<li>抽象</li>
+<li>三大特性：<ul>
+<li>封装</li>
+<li>继承</li>
+<li>多态​</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-类和对象"><a href="#2-类和对象" class="headerlink" title="2.类和对象"></a>2.类和对象</h2><h3 id="2-1-类"><a href="#2-1-类" class="headerlink" title="2.1 类"></a>2.1 类</h3><ul>
+<li>抽象的数据类型</li>
+<li>使用new关键字创建对象</li>
+</ul>
+<h3 id="2-2-对象"><a href="#2-2-对象" class="headerlink" title="2.2 对象"></a>2.2 对象</h3><ul>
+<li>对象概念的具体实例</li>
+</ul>
+<h3 id="2-3构造器（方法）"><a href="#2-3构造器（方法）" class="headerlink" title="2.3构造器（方法）"></a>2.3构造器（方法）</h3><ul>
+<li><p>在创建对象时候调用，和类名相同，没有返回值；</p>
+<p>1.无参构造器可以省略</p>
+<p>2.调用有参构造器，无参构造器不执行</p>
+</li>
+</ul>
+<h3 id="2-4-类图"><a href="#2-4-类图" class="headerlink" title="2.4 类图"></a>2.4 类图</h3><p><img src="http://q3y8wl0oj.bkt.clouddn.com//image对象图.png" alt=""></p>
+<h2 id="3-三大特性"><a href="#3-三大特性" class="headerlink" title="3. 三大特性"></a>3. 三大特性</h2><h3 id="3-1-封装"><a href="#3-1-封装" class="headerlink" title="3.1 封装"></a>3.1 封装</h3><ul>
+<li><p>属性私有：get，set</p>
+<p>高内聚：类的内部数据操作细节自己完成，不需要外部干涉。</p>
+<p>低耦合：尽量暴露少量的方法给外部使用。</p>
+<p>好处：提高程序的安全性，保护数据。</p>
+<p>​      隐藏代码的实现细节。</p>
+</li>
+</ul>
+<h3 id="3-2-继承"><a href="#3-2-继承" class="headerlink" title="3.2 继承"></a>3.2 继承</h3><ul>
+<li>本质是对某一批类的抽象；</li>
+<li>java里面是<strong>单继承</strong>；</li>
+<li>Object类是所有类的父类；</li>
+</ul>
+<h4 id="3-2-1-super和this"><a href="#3-2-1-super和this" class="headerlink" title="3.2.1 super和this"></a>3.2.1 super和this</h4><p>super指向父类</p>
+<p>this 指向本身</p>
+<p>【super】：</p>
+<ul>
+<li>调用父类的构造方法，必须在构造方法第一个；</li>
+<li>必须只能出现在子类的方法和构造方法中；</li>
+<li>super和this不能同时调用构造方法；</li>
+</ul>
+<p>【this】：</p>
+<ul>
+<li>this没有继承也可以使用，super只能在继承条件下使用。</li>
+</ul>
+<h3 id="3-3-多态"><a href="#3-3-多态" class="headerlink" title="3.3 多态"></a>3.3 多态</h3><h4 id="3-3-1-重写"><a href="#3-3-1-重写" class="headerlink" title="3.3.1 重写"></a>3.3.1 重写</h4><p>不能被重写的方法：</p>
+<ul>
+<li>static</li>
+<li>final</li>
+<li>private</li>
+</ul>
+<h4 id="3-3-2多态"><a href="#3-3-2多态" class="headerlink" title="3.3.2多态"></a>3.3.2多态</h4><ul>
+<li>【<strong>父类的引用指向子类</strong>】：Person s1=new Student();<ul>
+<li>对象能执行的方法：主要看对象左边的Person类型，与右边的Student关系不大。</li>
+<li>不能调用子类独有的方法。</li>
+</ul>
+</li>
+<li>多态是【方法的多态】，属性没有多态；</li>
+<li>多态存在的条件：继承关系，方法需要重写，父类的引用指向子类对象</li>
+</ul>
+<h4 id="3-3-3-instanceof"><a href="#3-3-3-instanceof" class="headerlink" title="3.3.3 instanceof"></a>3.3.3 instanceof</h4><ul>
+<li>instanceof 判断类型</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A <span class="keyword">instanceof</span> B   <span class="comment">//判断A是否是B类型</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-3-4-类型转换"><a href="#3-3-4-类型转换" class="headerlink" title="3.3.4 类型转换"></a>3.3.4 类型转换</h4><ol>
+<li>低转高：不需要强制转换</li>
+</ol>
+<p><code>Person s1=new Student();</code></p>
+<ol>
+<li>高转低：强制转换</li>
+</ol>
+<p><code>Student student=(Student)s1;</code></p>
+<h2 id="4-static"><a href="#4-static" class="headerlink" title="4. static"></a>4. static</h2><h3 id="4-1-静态属性"><a href="#4-1-静态属性" class="headerlink" title="4.1 静态属性"></a>4.1 静态属性</h3><p>通过<code>类.属性</code>调用，不需要实例。</p>
+<h3 id="4-2-静态方法"><a href="#4-2-静态方法" class="headerlink" title="4.2 静态方法"></a>4.2 静态方法</h3><ul>
+<li>非静态的方法，可以访问静态方法。</li>
+<li>静态方法可以调用静态方法，但是不能访问非静态方法。</li>
+</ul>
+<h3 id="4-3-静态代码块"><a href="#4-3-静态代码块" class="headerlink" title="4.3 静态代码块"></a>4.3 静态代码块</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Teacher</span>  </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Teacher</span><span class="params">()</span></span>&#123;System.out.println(<span class="string">"构造器代码块"</span>);&#125;</span><br><span class="line">    <span class="keyword">static</span>&#123;System.out.println(<span class="string">"static代码块"</span>);&#125;</span><br><span class="line">    &#123;System.out.println(<span class="string">"匿名代码块"</span>); &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Teacher t = <span class="keyword">new</span> Teacher();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">==================结果=================</span><br><span class="line"><span class="keyword">static</span>代码块</span><br><span class="line">匿名代码块</span><br><span class="line">构造器代码块</span><br></pre></td></tr></table></figure>
+<p><strong>static只执行一次</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Teacher</span>  </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Teacher</span><span class="params">()</span></span>&#123;System.out.println(<span class="string">"构造器代码块"</span>);&#125;</span><br><span class="line">    <span class="keyword">static</span>&#123;System.out.println(<span class="string">"static代码块"</span>);&#125;</span><br><span class="line">    &#123;System.out.println(<span class="string">"匿名代码块"</span>); &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Teacher t = <span class="keyword">new</span> Teacher();</span><br><span class="line">        System.out.println(<span class="string">"======================"</span>);</span><br><span class="line">        Teacher t2 = <span class="keyword">new</span> Teacher();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">结果：</span><br><span class="line">  <span class="keyword">static</span>代码块</span><br><span class="line">  匿名代码块</span><br><span class="line">  构造器代码块</span><br><span class="line">  ======================</span><br><span class="line">  匿名代码块</span><br><span class="line">  构造器代码块</span><br></pre></td></tr></table></figure>
+<h2 id="5-抽象类和接口"><a href="#5-抽象类和接口" class="headerlink" title="5. 抽象类和接口"></a>5. 抽象类和接口</h2><h3 id="5-1-抽象类abstract"><a href="#5-1-抽象类abstract" class="headerlink" title="5.1 抽象类abstract"></a>5.1 抽象类abstract</h3><ul>
+<li>抽象类与抽象方法：<ul>
+<li>抽象方法不需要写内容<code>public abstract void shout();</code></li>
+<li>抽象类里面可以有抽象方法和普通方法</li>
+<li>子类要实现抽象类的所有方法，除非子类也是抽象的。</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-2-接口-interface"><a href="#5-2-接口-interface" class="headerlink" title="5.2 接口 interface"></a>5.2 接口 interface</h3><ul>
+<li>接口也是约束，约束与实现分离。</li>
+<li>接口可以实现implements<strong>伪多继承</strong>。</li>
+<li>接口中的方法都是抽象的<code>public abstract</code>,必须实现里面所有方法。</li>
+</ul>
+<h2 id="6-内部类"><a href="#6-内部类" class="headerlink" title="6. 内部类"></a>6. 内部类</h2><ul>
+<li>定义：在一个类中再定义一个类。</li>
+<li>内部类可以访问外部类的<strong>私有属性</strong></li>
+<li>内部类中不能由static属性</li>
+</ul>
+<h3 id="6-1-成员内部类"><a href="#6-1-成员内部类" class="headerlink" title="6.1 成员内部类"></a>6.1 成员内部类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> oop;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Factory.method.TeslaFactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Teacher</span>  </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> id=<span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">out</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"外部类方法"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Inner</span></span>&#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">in</span><span class="params">()</span></span>&#123;</span><br><span class="line">            System.out.println(<span class="string">"这是内部类方法"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getID</span><span class="params">()</span></span>&#123;</span><br><span class="line">            System.out.println(id);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Teacher teacher = <span class="keyword">new</span> Teacher();</span><br><span class="line">        teacher.out();</span><br><span class="line">        <span class="comment">//通过外部类来实例化内部类</span></span><br><span class="line">        Inner inner = teacher.new Inner();</span><br><span class="line">        inner.in();</span><br><span class="line">        inner.getID();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="6-2-静态内部类"><a href="#6-2-静态内部类" class="headerlink" title="6.2 静态内部类"></a>6.2 静态内部类</h3><ul>
+<li>一旦加上static后，内部类就拿不到外部类的私有属性了。</li>
+<li>静态内部类的创建不依赖外部类</li>
+</ul>
+<h3 id="6-3-匿名内部类"><a href="#6-3-匿名内部类" class="headerlink" title="6.3 匿名内部类"></a>6.3 匿名内部类</h3><ul>
+<li>匿名内部类必须继承一个抽象类或者实现一个接口。</li>
+<li>匿名内部类没有类名，因此没有构造方法。</li>
+</ul>
+<h3 id="6-4-局部（方法）内部类"><a href="#6-4-局部（方法）内部类" class="headerlink" title="6.4 局部（方法）内部类"></a>6.4 局部（方法）内部类</h3><ul>
+<li>写在方法里面</li>
+<li>不允许使用访问权限修饰符（public、private、protected）均不允许。</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/03/SpringBoot/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pangshizong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我只是一个偶像派程序员~">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/03/SpringBoot/" itemprop="url">SpringBoot</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-03T15:59:03+08:00">
+                2020-02-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/02/MySQL/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pangshizong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我只是一个偶像派程序员~">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/02/MySQL/" itemprop="url">MySQL</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-02T15:01:19+08:00">
+                2020-02-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MySQL/" itemprop="url" rel="index">
+                    <span itemprop="name">MySQL</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h1><h2 id="2-操作数据库"><a href="#2-操作数据库" class="headerlink" title="2. 操作数据库"></a>2. 操作数据库</h2><h3 id="2-1-数据类型"><a href="#2-1-数据类型" class="headerlink" title="2.1 数据类型"></a>2.1 数据类型</h3><ul>
+<li>数值<ul>
+<li>tinyint 十分小的数据 1个字节</li>
+<li>smallint 较小的数据 2个字节</li>
+<li>mediumint 中等大小的数据 3个字节</li>
+<li><strong>int 标准的整数 4个字节</strong></li>
+<li>bigint 较大的数据 8个字节</li>
+<li>float 浮点数 4个字节</li>
+<li>double 浮点数 8个字节</li>
+<li>decimal 字符串形式的浮点数 <strong>金融计算时候</strong></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>字符串<ul>
+<li>char   字符串固定大小的 0-255</li>
+<li><strong>varcahr 可变字符串 0-65535</strong></li>
+<li>tinytext 微型文本 2^8-1</li>
+<li><strong>text 文本串  2^16-1</strong></li>
+</ul>
+</li>
+<li>时间日期<ul>
+<li>date 日期 YYYY-MM-DD</li>
+<li>time 时间 HH: mm:ss</li>
+<li><strong>datetime YYYY-MM-DD HH: mm:ss</strong></li>
+<li>timestamp 时间戳， 1970.1.1到现在的毫秒数</li>
+<li>year 年份</li>
+</ul>
+</li>
+<li>null<ul>
+<li>不要使用null进行运算，结果为NULL</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-2-字段属性"><a href="#2-2-字段属性" class="headerlink" title="2.2 字段属性"></a>2.2 字段属性</h3><ul>
+<li>Unsigned：无符号的整数，不能声明为负数</li>
+<li>Zerofill: 0填充的，不足的位数使用0来填充</li>
+<li>自增Auto_increment：通常用来设置唯一的主键，必须是整数类型；可以设置增量步长和起始值</li>
+<li>非空：NULL 和NOT NULL </li>
+</ul>
+<h3 id="2-3-MyISAM和InnoDB"><a href="#2-3-MyISAM和InnoDB" class="headerlink" title="2.3 MyISAM和InnoDB"></a>2.3 MyISAM和InnoDB</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">默认：InnoDB</span><br><span class="line">早期版本：MyISAM</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>MyISAM</th>
+<th>InnoDB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>事物支持</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>数据行锁定</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td></td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>全文索引</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>表空间大小</td>
+<td>小</td>
+<td>大</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-4-修改表"><a href="#2-4-修改表" class="headerlink" title="2.4 修改表"></a>2.4 修改表</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">修改表名：</span><br><span class="line">	<span class="keyword">AlTER</span> <span class="keyword">TABLE</span> 旧表名 <span class="keyword">RENAME</span> <span class="keyword">AS</span> 新表名</span><br><span class="line">增加表的字段</span><br><span class="line">	<span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">ADD</span> 字段名 列属性</span><br><span class="line">修改表的字段（重命名，修改约束！）</span><br><span class="line">	<span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">MODIFY</span> 表名 <span class="built_in">VARCHAR</span>(<span class="number">11</span>)<span class="comment">--修改约束</span></span><br><span class="line">	<span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">CHANGE</span> 旧表名 新表名 <span class="comment">--字段重命名</span></span><br><span class="line">删除表的字段</span><br><span class="line">    <span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">DROP</span> 字段名	</span><br><span class="line">删除表</span><br><span class="line">	<span class="keyword">DROP</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">EXISTS</span> 表名</span><br></pre></td></tr></table></figure>
+<ul>
+<li>modify 修改约束，change重命名字段</li>
+<li>关键字大小写不敏感，建议小写</li>
+</ul>
+<h2 id="3-MySQL数据管理"><a href="#3-MySQL数据管理" class="headerlink" title="3. MySQL数据管理"></a>3. MySQL数据管理</h2><h3 id="3-1-外键（了解）"><a href="#3-1-外键（了解）" class="headerlink" title="3.1 外键（了解）"></a>3.1 外键（了解）</h3><h3 id="3-2-DML语言-全部记住"><a href="#3-2-DML语言-全部记住" class="headerlink" title="3.2 DML语言(全部记住)"></a>3.2 DML语言(全部记住)</h3><h3 id="3-3-添加"><a href="#3-3-添加" class="headerlink" title="3.3 添加"></a>3.3 添加</h3><h3 id="3-4-修改"><a href="#3-4-修改" class="headerlink" title="3.4 修改"></a>3.4 修改</h3><h3 id="3-5-删除"><a href="#3-5-删除" class="headerlink" title="3.5 删除"></a>3.5 删除</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/01/设计模式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1864,481 +2463,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/19/C语言快速复习/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我只是一个偶像派程序员~">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/06/19/C语言快速复习/" itemprop="url">C语言快速复习</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-19T10:50:22+08:00">
-                2019-06-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习杂文/" itemprop="url" rel="index">
-                    <span itemprop="name">学习杂文</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="欠下的总要还的！"><a href="#欠下的总要还的！" class="headerlink" title="欠下的总要还的！"></a>欠下的总要还的！</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">include &quot;stdafx.h&quot;</span><br><span class="line">include&lt;stdio.h&gt;</span><br><span class="line">include&lt;Windows.h&gt;</span><br><span class="line">define PI 3.1415  //宏定义</span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    int a=11;</span><br><span class="line">    float b = 123.145f;</span><br><span class="line">    char c;</span><br><span class="line">    char str[] = &quot;hello&quot;;</span><br><span class="line">    for (int i = 0; str[i] != &apos;\0&apos;; i++) &#123;</span><br><span class="line">    	printf(&quot;%c&quot;, str[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%s&quot;, str);</span><br><span class="line"></span><br><span class="line">    system(&quot;pause&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">输入scanf(&quot;%2d&quot;,a);输出用prinf(&quot;%7.4f&quot;,a);%d  %c 字符输入输出： getchar()，没有参数；putchar(参数就是输出的字符);</span><br><span class="line">宏定义 #define A 3.1415;和const常量 </span><br><span class="line">数学 include&lt;math.h&gt; sqrt(x)，fabs(x), log(x) exp(x), pow(x,y), </span><br><span class="line">&lt;stdlib.h&gt;\</span><br><span class="line">rand()随机函数</span><br><span class="line">	1. rand()%b  [0,b-1]</span><br><span class="line">	2. rand()%b+a [a,a+b-1]</span><br><span class="line">srand()种子 ，可以设置srand(time(NULL)) time在&lt;time.h&gt;中</span><br><span class="line">转义： \n换行,\0字符串结束标志，\b退格，\a响铃</span><br><span class="line">ASCIll码表： a--97 A--65 （相差32）</span><br><span class="line">EOF -1</span><br><span class="line">exit();终止,在&lt;stdlib.h&gt;中</span><br><span class="line">switch(表达式）</span><br><span class="line">&#123;</span><br><span class="line">	case &apos;=&apos;:xxx </span><br><span class="line">			break;</span><br><span class="line">	case &apos;+&apos;: xxx</span><br><span class="line">			break;</span><br><span class="line">	default:</span><br><span class="line">			除此之外的情况；</span><br><span class="line">&#125;</span><br><span class="line">位运算符;与&amp;(两个都是1 为1)，或|（有1 为1），亦或^（不一样为1），取反-，左移&lt;&lt;，右移&gt;&gt;。</span><br><span class="line">判断奇偶性：a&amp;1  </span><br><span class="line">break跳出当前层循环，continue进行下一次循环</span><br></pre></td></tr></table></figure>
-<p>====函数==================================================</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int Fuck( int a)</span><br><span class="line">main()</span><br><span class="line">int Fuck( int a)//如果写在main后面，要在前面声明一下。  默认返回类型是int型。</span><br><span class="line">&#123;</span><br><span class="line">a++;</span><br><span class="line">return a; 返回值可以是数组以外的任何类型。良好风格：即便是void,也返回return;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>======数组======================</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">一维数组 int score[5]; 不能用变量定义数组大小。</span><br><span class="line">		 int score[5]=&#123;1,2,3,4,5&#125;;</span><br><span class="line">		 int score[]=&#123;1,2,3,4,5&#125;;</span><br><span class="line">二维数组 int two[3][4];第二维的长度不可以省略！！！</span><br></pre></td></tr></table></figure>
-<p>=========指针==================</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">取地址运算符&amp;</span><br><span class="line">定义： int *a,*b;</span><br><span class="line"></span><br><span class="line">*a=9;pa指向变量9；</span><br><span class="line">*b=&amp;c;  //此时&amp;c和b都是地址值</span><br></pre></td></tr></table></figure>
-<p>==========字符串================</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">以&quot;\0&quot;最为字符串结尾标志</span><br><span class="line">char str[6]=&#123;&apos;h&apos;,&apos;e&apos;,&apos;l&apos;,&apos;l&apos;,&apos;o&apos;,&apos;\0&apos;&#125;;</span><br><span class="line">char str[]=&#123;&quot;hello&quot;&#125;;</span><br><span class="line">char str[]=&quot;hello&quot;;</span><br><span class="line">字符指针：char *p=&quot;hello&quot;;与char *p; p=&quot;hello&quot;;</span><br><span class="line">访问字符串中的某个字符： *(ptr+i),ptr指向字符数组的首地址</span><br></pre></td></tr></table></figure>
-<p>输入和输出</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. for循环一个一个输入与输出</span><br><span class="line">2. scanf(&quot;%s&quot;,str)遇到空白（空格，回车，制表符）停止,printf(&quot;%s&quot;,str);</span><br><span class="line">3. gets()遇到回车符结束。 puts() 遇到第一个&quot;\0&quot;结束</span><br></pre></td></tr></table></figure>
-<p>字符串处理函数&lt;string.h&gt;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">求长度 strlen(str);</span><br><span class="line">字符串复制 strcpy(str1,str2); 将str2复制到str1;</span><br><span class="line">字符串比较strcmp(str1,str2); 从左到右，逐个字符比较</span><br><span class="line">字符串连接 strcat(str1,str2); 将str2连接到str1末尾</span><br></pre></td></tr></table></figure>
-<p>=============指针和数组================</p>
-<p>==========结构体和共用体===========</p>
-<p>放在mian()之前<br>定义：struct student</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> &#123;</span><br><span class="line">int id;</span><br><span class="line">char name[10];</span><br><span class="line">int age;</span><br><span class="line"> &#125;stu1; 带有分号,有一个stu1</span><br></pre></td></tr></table></figure>
-<p>初始化： struct student stu1={12,”psz”,22};<br>引用：stu1.id;<br>赋值 stu2=stu1;<br>结构体数组 student stu[2]={</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;13,&quot;psz&quot;,22&#125;,</span><br><span class="line">&#123;14,&quot;cy&quot;,33&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>结构体指针 student *p;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p=&amp;stu1;</span><br><span class="line">赋值：p-&gt;id=33;或者 (*p).id=19;</span><br></pre></td></tr></table></figure>
-<p>枚举 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum &#123;yes，no，none&#125; answer</span><br></pre></td></tr></table></figure>
-<p>===============文件操作===========</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/14/MD语法/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我只是一个偶像派程序员~">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/06/14/MD语法/" itemprop="url">MD语法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-14T13:26:32+08:00">
-                2019-06-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习杂文/" itemprop="url" rel="index">
-                    <span itemprop="name">学习杂文</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="1-标题用”-”，几级标题，就在前面加几个“-”"><a href="#1-标题用”-”，几级标题，就在前面加几个“-”" class="headerlink" title="1. 标题用”#”，几级标题，就在前面加几个“#”"></a>1. 标题用”#”，几级标题，就在前面加几个“#”</h4><h4 id="2-列表"><a href="#2-列表" class="headerlink" title="2. 列表"></a>2. 列表</h4><h5 id="无序列表，用-来实现"><a href="#无序列表，用-来实现" class="headerlink" title="无序列表，用*来实现"></a>无序列表，用*来实现</h5><h5 id="有序列表，数字后加“-”"><a href="#有序列表，数字后加“-”" class="headerlink" title="有序列表，数字后加“.”"></a>有序列表，数字后加“.”</h5><h4 id="3-区块引用-符号“-gt-”-有多级引用，根据“-gt-”数量"><a href="#3-区块引用-符号“-gt-”-有多级引用，根据“-gt-”数量" class="headerlink" title="3. 区块引用 符号“&gt;” 有多级引用，根据“&gt;”数量"></a>3. 区块引用 符号“&gt;” 有多级引用，根据“&gt;”数量</h4><blockquote>
-<blockquote>
-<p>标题</p>
-<blockquote>
-<blockquote>
-<p>hhah </p>
-<p>nice</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>世界</p>
-<p>你在干嘛</p>
-</blockquote>
-<h4 id="4-分割线-三个符号“—”"><a href="#4-分割线-三个符号“—”" class="headerlink" title="4. 分割线 三个符号“—”"></a>4. 分割线 三个符号“—”</h4><hr>
-<h4 id="5-链接-里面加内容-里面加地址"><a href="#5-链接-里面加内容-里面加地址" class="headerlink" title="5. 链接 []里面加内容 ()里面加地址"></a>5. 链接 []里面加内容 ()里面加地址</h4><p>例如:<a href="www.baidu.com">百度</a></p>
-<h4 id="6-图片-里面加内容，-里面加地址"><a href="#6-图片-里面加内容，-里面加地址" class="headerlink" title="6. 图片 ![]里面加内容，()里面加地址"></a>6. 图片 ![]里面加内容，()里面加地址</h4><p> 比如：</p>
-<p><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2356724439,3807305983&amp;fm=26&amp;gp=0.jpg" alt="helloworld"></p>
-<h4 id="7-代码框："><a href="#7-代码框：" class="headerlink" title="7. 代码框："></a>7. 代码框：</h4><h5 id="单行代码块，用“-”包起来"><a href="#单行代码块，用“-”包起来" class="headerlink" title="单行代码块，用“  ”包起来"></a>单行代码块，用“ <code></code> ”包起来</h5><p><code>#include&lt;stdio.&gt;</code></p>
-<h5 id="多行代码块，用三个反引号“"><a href="#多行代码块，用三个反引号“" class="headerlink" title="多行代码块，用三个反引号“"></a>多行代码块，用三个反引号“<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></h5><p></p><p>hello</p><p></p>
-<p></p><p>world</p><p></p>
-<p></p><p>!!!!!</p><br><code>`</code><p></p>
-<h4 id="8-强调"><a href="#8-强调" class="headerlink" title="8. 强调"></a>8. 强调</h4><blockquote>
-<p><em>倾斜用一对星号包起来</em></p>
-<p><strong>加粗用两对星号包起来</strong></p>
-</blockquote>
-<h4 id="9-删除，用“-”包起来"><a href="#9-删除，用“-”包起来" class="headerlink" title="9.删除，用“~~”包起来"></a>9.删除，用“~~”包起来</h4><p><del>删除我吧</del></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/30/闯入者/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Pangshizong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我只是一个偶像派程序员~">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/30/闯入者/" itemprop="url">闯入者</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-30T22:47:40+08:00">
-                2019-03-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://wx4.sinaimg.cn/large/d9c98269gy1g1l7fatql1j21hc140dnm.jpg" alt=""></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2393,7 +2517,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2404,7 +2528,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
