@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="欠下的总要还的！12345678910111213141516171819include &amp;quot;stdafx.h&amp;quot;include&amp;lt;stdio.h&amp;gt;include&amp;lt;Windows.h&amp;gt;define PI 3.1415  //宏定义int main()&amp;#123;    int a=11;    float b = 123.145f;    char c;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C语言快速复习">
+<meta property="og:url" content="http://yoursite.com/2019/06/19/C语言快速复习/index.html">
+<meta property="og:site_name" content="我只是一个偶像派程序员~">
+<meta property="og:description" content="欠下的总要还的！12345678910111213141516171819include &amp;quot;stdafx.h&amp;quot;include&amp;lt;stdio.h&amp;gt;include&amp;lt;Windows.h&amp;gt;define PI 3.1415  //宏定义int main()&amp;#123;    int a=11;    float b = 123.145f;    char c;">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-02-01T08:24:53.007Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C语言快速复习">
+<meta name="twitter:description" content="欠下的总要还的！12345678910111213141516171819include &amp;quot;stdafx.h&amp;quot;include&amp;lt;stdio.h&amp;gt;include&amp;lt;Windows.h&amp;gt;define PI 3.1415  //宏定义int main()&amp;#123;    int a=11;    float b = 123.145f;    char c;">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/06/19/C语言快速复习/"/>
+
+
+
+
+
+  <title>C语言快速复习 | 我只是一个偶像派程序员~</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">我只是一个偶像派程序员~</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/19/C语言快速复习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pangshizong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我只是一个偶像派程序员~">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">C语言快速复习</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-19T10:50:22+08:00">
+                2019-06-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习杂文/" itemprop="url" rel="index">
+                    <span itemprop="name">学习杂文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="欠下的总要还的！"><a href="#欠下的总要还的！" class="headerlink" title="欠下的总要还的！"></a>欠下的总要还的！</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">include &quot;stdafx.h&quot;</span><br><span class="line">include&lt;stdio.h&gt;</span><br><span class="line">include&lt;Windows.h&gt;</span><br><span class="line">define PI 3.1415  //宏定义</span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    int a=11;</span><br><span class="line">    float b = 123.145f;</span><br><span class="line">    char c;</span><br><span class="line">    char str[] = &quot;hello&quot;;</span><br><span class="line">    for (int i = 0; str[i] != &apos;\0&apos;; i++) &#123;</span><br><span class="line">    	printf(&quot;%c&quot;, str[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%s&quot;, str);</span><br><span class="line"></span><br><span class="line">    system(&quot;pause&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">输入scanf(&quot;%2d&quot;,a);输出用prinf(&quot;%7.4f&quot;,a);%d  %c 字符输入输出： getchar()，没有参数；putchar(参数就是输出的字符);</span><br><span class="line">宏定义 #define A 3.1415;和const常量 </span><br><span class="line">数学 include&lt;math.h&gt; sqrt(x)，fabs(x), log(x) exp(x), pow(x,y), </span><br><span class="line">&lt;stdlib.h&gt;\</span><br><span class="line">rand()随机函数</span><br><span class="line">	1. rand()%b  [0,b-1]</span><br><span class="line">	2. rand()%b+a [a,a+b-1]</span><br><span class="line">srand()种子 ，可以设置srand(time(NULL)) time在&lt;time.h&gt;中</span><br><span class="line">转义： \n换行,\0字符串结束标志，\b退格，\a响铃</span><br><span class="line">ASCIll码表： a--97 A--65 （相差32）</span><br><span class="line">EOF -1</span><br><span class="line">exit();终止,在&lt;stdlib.h&gt;中</span><br><span class="line">switch(表达式）</span><br><span class="line">&#123;</span><br><span class="line">	case &apos;=&apos;:xxx </span><br><span class="line">			break;</span><br><span class="line">	case &apos;+&apos;: xxx</span><br><span class="line">			break;</span><br><span class="line">	default:</span><br><span class="line">			除此之外的情况；</span><br><span class="line">&#125;</span><br><span class="line">位运算符;与&amp;(两个都是1 为1)，或|（有1 为1），亦或^（不一样为1），取反-，左移&lt;&lt;，右移&gt;&gt;。</span><br><span class="line">判断奇偶性：a&amp;1  </span><br><span class="line">break跳出当前层循环，continue进行下一次循环</span><br></pre></td></tr></table></figure>
+<p>====函数==================================================</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int Fuck( int a)</span><br><span class="line">main()</span><br><span class="line">int Fuck( int a)//如果写在main后面，要在前面声明一下。  默认返回类型是int型。</span><br><span class="line">&#123;</span><br><span class="line">a++;</span><br><span class="line">return a; 返回值可以是数组以外的任何类型。良好风格：即便是void,也返回return;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>======数组======================</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">一维数组 int score[5]; 不能用变量定义数组大小。</span><br><span class="line">		 int score[5]=&#123;1,2,3,4,5&#125;;</span><br><span class="line">		 int score[]=&#123;1,2,3,4,5&#125;;</span><br><span class="line">二维数组 int two[3][4];第二维的长度不可以省略！！！</span><br></pre></td></tr></table></figure>
+<p>=========指针==================</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">取地址运算符&amp;</span><br><span class="line">定义： int *a,*b;</span><br><span class="line"></span><br><span class="line">*a=9;pa指向变量9；</span><br><span class="line">*b=&amp;c;  //此时&amp;c和b都是地址值</span><br></pre></td></tr></table></figure>
+<p>==========字符串================</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">以&quot;\0&quot;最为字符串结尾标志</span><br><span class="line">char str[6]=&#123;&apos;h&apos;,&apos;e&apos;,&apos;l&apos;,&apos;l&apos;,&apos;o&apos;,&apos;\0&apos;&#125;;</span><br><span class="line">char str[]=&#123;&quot;hello&quot;&#125;;</span><br><span class="line">char str[]=&quot;hello&quot;;</span><br><span class="line">字符指针：char *p=&quot;hello&quot;;与char *p; p=&quot;hello&quot;;</span><br><span class="line">访问字符串中的某个字符： *(ptr+i),ptr指向字符数组的首地址</span><br></pre></td></tr></table></figure>
+<p>输入和输出</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. for循环一个一个输入与输出</span><br><span class="line">2. scanf(&quot;%s&quot;,str)遇到空白（空格，回车，制表符）停止,printf(&quot;%s&quot;,str);</span><br><span class="line">3. gets()遇到回车符结束。 puts() 遇到第一个&quot;\0&quot;结束</span><br></pre></td></tr></table></figure>
+<p>字符串处理函数&lt;string.h&gt;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">求长度 strlen(str);</span><br><span class="line">字符串复制 strcpy(str1,str2); 将str2复制到str1;</span><br><span class="line">字符串比较strcmp(str1,str2); 从左到右，逐个字符比较</span><br><span class="line">字符串连接 strcat(str1,str2); 将str2连接到str1末尾</span><br></pre></td></tr></table></figure>
+<p>=============指针和数组================</p>
+<p>==========结构体和共用体===========</p>
+<p>放在mian()之前<br>定义：struct student</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> &#123;</span><br><span class="line">int id;</span><br><span class="line">char name[10];</span><br><span class="line">int age;</span><br><span class="line"> &#125;stu1; 带有分号,有一个stu1</span><br></pre></td></tr></table></figure>
+<p>初始化： struct student stu1={12,”psz”,22};<br>引用：stu1.id;<br>赋值 stu2=stu1;<br>结构体数组 student stu[2]={</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;13,&quot;psz&quot;,22&#125;,</span><br><span class="line">&#123;14,&quot;cy&quot;,33&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>结构体指针 student *p;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p=&amp;stu1;</span><br><span class="line">赋值：p-&gt;id=33;或者 (*p).id=19;</span><br></pre></td></tr></table></figure>
+<p>枚举 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum &#123;yes，no，none&#125; answer</span><br></pre></td></tr></table></figure>
+<p>===============文件操作===========</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/14/MD语法/" rel="next" title="MD语法">
+                <i class="fa fa-chevron-left"></i> MD语法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/01/四分之三/" rel="prev" title="四分之三">
+                四分之三 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="Pangshizong" />
+            
+              <p class="site-author-name" itemprop="name">Pangshizong</p>
+              <p class="site-description motion-element" itemprop="description">Stay hungry, stay foolish</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#欠下的总要还的！"><span class="nav-number">1.</span> <span class="nav-text">欠下的总要还的！</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Pangshizong</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
